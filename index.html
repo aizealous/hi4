@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+   img { 
+      width: 20%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+   }
+
+   img:hover {
+      animation: shake 0.5s;    
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+
+   .flower {
+      width: 50%;
+      box-shadow: 0px 0px 20px burlywood;
+      border-radius: 20% 20% 50% 50%;
+      margin-top: 2rem;
+   }
+
+   .cat {
+      animation-duration: 5s;
+      animation-name: slidein;
+      
+   }
+ 
+   .namaste {
+      margin-top: 0rem;
+      font-weight: bold;
+      color: #ffffff;
+      font-size:1.2rem;
+   }
+
+
+   
+   body {
+      background-image: url("./static/img/pic9.png");
+      background-size:cover;
+      text-align:center;
+      background-color: rgb(73, 74, 68);  
+   }
+
+
+   .card {
+      display: block;
+      justify-content: center;
+
+}
+
+ 
+
+ h1 {
+   font-weight: bold;
+   color: #ffffff;
+   font-size:2rem;
+}
+
+
+
+ ul {
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   align-self: center;
+   justify-content: center;
+      
+ }
+
+ li {
+   width: 18%;
+   object-fit: cover;
+   border-radius: 100px  100px 100px 100px;
+   cursor: pointer;
+   transition: width 1s ease-in-out;
+   background-size:cover;
+   height:auto;
+   margin:20px;
+   padding: 5px;
+   font-size: 1.5rem;
+   color: rgb(34, 21, 0);
+   
+
+ }
+
+ iframe ,li:hover {
+   width: 40%;
+   font-size: 1.8rem;
+   color: rgb(255, 255, 255);
+   height:auto;
+   background-size:cover;
+   object-fit: cover;
+   background-repeat:no-repeat;
+   -webkit-text-stroke: 1px rgb(28, 26, 26);
+   font-weight: bolder;
+   text-shadow: rgb(250, 250, 250) 0px 0px 8px;
+   
+
+ }
+
+
+ #card3 {
+   background-image: url("./static/img/pic1.png");
+   transform: rotate(-10deg);
+   margin:50px;
+   animation: anim3 0.5s;    
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards; 
+
+ }
+
+
+ @keyframes anim3 {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+
+   100% { transform: translate(5%,0px) rotate(0deg); }
+ }
+
+ #card2 {
+   background-image: url("./static/img/pic6.png");
+   transform: rotate(10deg);
+   margin:50px;
+   animation: anim2 0.5s;    
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards; 
+
+ }
+
+
+ @keyframes anim2 {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+
+   100% { transform: translate(-5%, 0px) rotate(0deg); }
+ }
+
+ #card1 {
+   background-image: url("./static/img/pic3.png");
+   transform: rotate(-10deg);
+   margin:50px;
+   animation: anim1 0.5s;    
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode:forwards; 
+
+ }
+
+
+ @keyframes anim1 {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+
+   100% { transform: translate(0px, 0%) rotate(0deg); }
+ }
+
+
+
+
+
+ #card4 {
+   background-image: url("./static/img/pic7.png");
+   transform: rotate(15deg);
+   animation: anim4 0.5s;    
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards; 
+
+ }
+
+
+ @keyframes anim4 {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+
+   100% { transform: translate(-5%, 0px) rotate(0deg); }
+ }
+
+
+ #card5 {
+   background-image: url("./static/img/pic5.png");
+   transform: rotate(-10deg);
+   animation: anim5 0.5s;    
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards; 
+
+ }
+
+
+ @keyframes anim5 {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+
+   100% { transform: translate(5%, 0px) rotate(0deg); }
+ }
+
+
+ #card6 {
+   width: 20%;
+   object-fit: cover;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: width 1s ease-in-out;
+   background-size:cover;
+   height:auto;
+   margin:2px;
+   padding: 5px;
+   font-size: 1rem;
+   color: rgb(34, 21, 0);
+   
+   animation: anim6 2s;    
+   animation-duration: 4s;
+   animation-iteration-count: 1;
+   animation-fill-mode: both; 
+
+ }
+
+
+ @keyframes anim6 {
+   0% { transform: scale(0.2); }
+   10% { transform: scale(0.7); }
+   20% { transform: scale(0.3); }
+   30% { transform: scale(0.8); }
+   40% { transform: scale(0.4); }
+   50% { transform: scale(0.9) }
+   66% { transform: scale(0.5); }
+   70% { transform: scale(1) }
+   80% { transform: scale(.6) }
+   90% { transform: scale(1.1) }
+   100% { transform: scale(1.5) }
+ }
+
+ #card7 {
+   background-image: url("./static/img/pic4.png");
+   transform: rotate(-25deg);
+   animation: anim7 0.5s;    
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards; 
+
+ }
+
+
+ @keyframes anim7 {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+
+   100% { transform: translate(-5%, 0px) rotate(0deg); }
+ }
+
+
+ #card8 {
+   background-image: url("./static/img/pic2.png");
+   transform: rotate(15deg);
+   animation: anim8 0.5s;    
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-fill-mode:both;
+ }
+
+
+ @keyframes anim8 {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+
+   100% { transform: translate(5%, 0px) rotate(0deg); }
+ }
+
+
+</style>
+
+   <body onload="myOnload()">  
+   <h1>PARA LEER UN POCO DE CADA CHAKRA HAZ DOBLE CLICK</h1>
+   
+   <div class= "card"> 
+
+      <ul>
+
+         <li class="card" id="card1">
+            <img class= "chakra" id= "chakra1" src="./static/img/c1.png" alt="chakra" ><br>El chakra 7 – Sahasrara, el chakra corona<br>
+            <iframe src="https://www.youtube.com/embed/goyZbut_KFY?si=-LRVG8c0Y9HcFak9&amp;start=4330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </li>
+      </ul>
+      <ul>
+
+         <li class="card" id="card2">
+            <img class= "chakra" id= "chakra2" src="./static/img/c3.png" alt="chakra" ><br> El chakra 5 – Vishuddha, el chakra de la garganta<br>
+            <iframe src="https://www.youtube.com/embed/goyZbut_KFY?si=A_cZ7RoSQiI4Lzbh&amp;start=3255&end=3775" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </li>
+         <li class="card" id="card3">
+            <img class= "chakra" id= "chakra2" src="./static/img/c2.png" alt="chakra" ><br> El chakra 6 – Ajna, el chakra del tercer ojo<br>
+            <iframe src="https://www.youtube.com/embed/goyZbut_KFY?si=5_Kp6yuaqAryknlk&amp;start=3795&end=4325" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </li>
+
+      </ul>
+      <ul>
+         <li class="card" id="card4">
+            <img class= "chakra" id= "chakra5" src="./static/img/c5.png" alt="chakra" ><br> El chakra 3 – Manipura, el chakra del plexo solar<br>
+            <iframe src="https://www.youtube.com/embed/goyZbut_KFY?si=EfGE4YWWvNLhG-zB&amp;start=2180&end=2700" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
+         </li>
+         
+         <li class="card" id="card6">
+            <div class="namaste"> </div>
+            <img class= "flower" id= "flower" src="./static/img/yoga.png" alt="flor" onclick="vibrateImg()">
+         </li>
+         
+
+         <li class="card" id="card5">
+            <img class= "chakra" id= "chakra4" src="./static/img/c4.png" alt="chakra" ><br>El chakra 4 – Anahata, el chakra corazón<br>
+            <iframe src="https://www.youtube.com/embed/goyZbut_KFY?si=bNt3DAk5sFmS5v0A&amp;start=2708&end=3245" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </li>
+
+      </ul>
+      <ul>
+
+         <li class="card" id="card7">
+            <img class= "chakra" id= "chakra7" src="./static/img/c7.png" alt="chakra" ><br>    Chakra 1 – Muladhara, el chakra raíz<br>
+            <iframe src="https://www.youtube.com/embed/goyZbut_KFY?si=dFqNxgVQerLaS9V7&amp;start=1080&end=1630" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>     
+         </li>
+         <li class="card" id="card8">
+            <img class= "chakra" id= "chakra6" src="./static/img/c6.png" alt="chakra" ><br>Chakra 2 – Svadhisthana, el chakra sacral<br>
+            <iframe src="https://www.youtube.com/embed/goyZbut_KFY?si=p5ZGR0U0C1kjENza&amp;start=1639&end=2170" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </li>
+      </ul>
+
+   </div>
+
+</body>
+   <script src="./static/script/script.js"></script>
+<script>
+   const vibrateImg = () => {
+   window.navigator.vibrate([500,100,1000,50,500,200,1000,50,500, 100, 1000, 200, 500, 100, 1000,50, 500]);
+   //const backgr=document.querySelector("body");
+   //backgr.style.backgroundColor="white";
+   const namaste=document.getElementsByClassName("namaste")[0];
+   namaste.innerHTML="SOY YOGIWEB<br>PODES ESCUCHARME<br>SIN AURICULARES<br>NO SOY DE AMAZON<br>PERO ESPERO SERVIRTE PARA<br>ESTUDIAR,SONREIR,<br>HACER YOGA,<br>BOLUDEAR,ETC";
+   const nodeList = document.querySelectorAll("img");
+   for (let i = 0; i < nodeList.length; i++) {
+      nodeList[i].style.boxShadow= "0px 0px 500px burlywood";
+      }
+   }
+   <!-- nodeList[i].style.width= "70%"; -->
+</script>
+</html>
+
+
+
+
