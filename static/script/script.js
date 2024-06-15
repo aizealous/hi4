@@ -17,12 +17,16 @@ alert("TEN MUCHA PRECAUCIÓN\nEL CONTENIDO DE LA WEB PUEDE CAUSAR BALANCES ENERG
 
 
    var msg = new SpeechSynthesisUtterance();
-   var voices = window.speechSynthesis.getVoices();   
-   //msg.voice = voices.filter(function(voice) { return voice.lang == 'es-ES' && voice.gender == 'female'; })[0];
+   var voices = speechSynthesis.getVoices();   
+
+//    speechSynthesis.getVoices().forEach(function(voice) {
+//    console.log('Hi! My name is ', voice.name);
+// });
+  // msg.voice = voices.filter(function(voice) { return voice.name="Microsoft Sabina - Spanish (Mexico)"; })[0];
    msg.text = text;
-   msg.lang == 'es-ES';
-   msg.voice=voices[5];
-   msg.gender == 'female';
+   //msg.lang == 'es-ES';
+   msg.voice=voices[1];
+   //msg.gender == 'female';
    msg.pitch = 0.2;
    msg.rate = 0.8;
    console.log(msg.text );
