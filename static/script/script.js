@@ -18,8 +18,11 @@ alert("TEN MUCHA PRECAUCIÓN\nEL CONTENIDO DE LA WEB PUEDE CAUSAR BALANCES ENERG
 
    var msg = new SpeechSynthesisUtterance();
    var voices = window.speechSynthesis.getVoices();   
-   msg.voice = voices.filter(function(voice) { return voice.lang == 'es-ES' && voice.gender == 'female'; })[0];
+   //msg.voice = voices.filter(function(voice) { return voice.lang == 'es-ES' && voice.gender == 'female'; })[0];
    msg.text = text;
+   msg.lang == 'es-ES';
+   msg.voice=voices[5];
+   msg.gender == 'female';
    msg.pitch = 0.2;
    msg.rate = 0.8;
    console.log(msg.text );
