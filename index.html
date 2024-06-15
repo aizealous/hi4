@@ -43,10 +43,11 @@
    }
  
    .namaste {
-      margin-top: 0rem;
+      margin-top: 1rem;
       font-weight: bold;
       color: #ffffff;
-      font-size:1.2rem;
+      font-size:1rem;
+     
    }
 
 
@@ -70,7 +71,7 @@
  h1 {
    font-weight: bold;
    color: #ffffff;
-   font-size:2rem;
+   font-size: 2rem ;
 }
 
 
@@ -284,6 +285,7 @@
 
    <body onload="myOnload()">  
    <h1>PARA LEER UN POCO DE CADA CHAKRA HAZ DOBLE CLICK</h1>
+   <h1>Y EL LOGO DE MEDITACIÓN PUEDE HABLAR CON TONO RARO &#128568;</h1>
    
    <div class= "card"> 
 
@@ -340,20 +342,7 @@
 
 </body>
    <script src="./static/script/script.js"></script>
-<script>
-   const vibrateImg = () => {
-   window.navigator.vibrate([500,100,1000,50,500,200,1000,50,500, 100, 1000, 200, 500, 100, 1000,50, 500]);
-   //const backgr=document.querySelector("body");
-   //backgr.style.backgroundColor="white";
-   const namaste=document.getElementsByClassName("namaste")[0];
-   namaste.innerHTML="SOY YOGIWEB<br>PODES ESCUCHARME<br>SIN AURICULARES<br>NO SOY DE AMAZON, NI DE TESLA<br>PERO ESPERO SERVIRTE PARA<br>ESTUDIAR,SONREIR,<br>HACER YOGA,<br>BOLUDEAR,ETC";
-   const nodeList = document.querySelectorAll("img");
-   for (let i = 0; i < nodeList.length; i++) {
-      nodeList[i].style.boxShadow= "0px 0px 500px burlywood";
-      }
-   }
-   <!-- nodeList[i].style.width= "70%"; -->
-</script>
+
 </html>
 
 
