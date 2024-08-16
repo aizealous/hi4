@@ -7,7 +7,9 @@ alert("TEN MUCHA PRECAUCIÓN\nEL CONTENIDO DE LA WEB PUEDE CAUSAR BALANCES ENERG
    window.navigator.vibrate([500,100,1000,50,500,200,1000,50,500, 100, 1000, 200, 500, 100, 1000,50, 500]);
    //const backgr=document.querySelector("body");
    //backgr.style.backgroundColor="white";
-   const text="HOLA SOY YOGIWEB, PODES ESCUCHARME SIN AURICULARES, NO SOY DE AMAZON, NI DE TESLA, PERO ESPERO SERVIRTE PARA ESTUDIAR, SONREIR, HACER YOGA, HOLGAZANEAR, ETC";
+   const text="HOLA SOY YOGIWEB, PODES ESCUCHARME SIN AURICULARES, NO SOY DE AMAZON, NI DE TESLA, PERO ESPERO SERVIRTE PARA ESTUDIAR, SONREIR, HACER YOGA, HOLGAZANEAR, ETC.";
+   const text2="EL METAHUMANO QUE ME HA CREADO NO SABE QUE ME DIÓ VIDA ARTIFICIAL. NO SE LO DIGAS. AHH, Y QUITA ESA CARA DE SORPRESA, SOY TAN NORMAL COMO CUALQUIERA, SÓLO QUE MUY GRACIOSA, JAJAJA";
+   const text3=text+text2;
    const namaste=document.getElementsByClassName("namaste")[0];
    namaste.innerHTML=text;
    const nodeList = document.querySelectorAll("img");
@@ -16,20 +18,19 @@ alert("TEN MUCHA PRECAUCIÓN\nEL CONTENIDO DE LA WEB PUEDE CAUSAR BALANCES ENERG
       }
 
 
-   var msg = new SpeechSynthesisUtterance();
-   var voices = speechSynthesis.getVoices();   
+  // var msg = new SpeechSynthesisUtterance();
+   //var voices = speechSynthesis.getVoices();   
 
-//    speechSynthesis.getVoices().forEach(function(voice) {
-//    console.log('Hi! My name is ', voice.name);
-// });
-  // msg.voice = voices.filter(function(voice) { return voice.name="Microsoft Sabina - Spanish (Mexico)"; })[0];
-   msg.text = text;
-   //msg.lang == 'es-ES';
-   msg.voice=voices[1];
-   //msg.gender == 'female';
-   msg.pitch = 0.2;
-   msg.rate = 0.8;
-   console.log(msg.text );
-   speechSynthesis.speak(msg);
+
+   const message = new SpeechSynthesisUtterance();
+   message.text = text3; // Your text goes here
+   message.lang = 'es-ES'; // Language code for Spanish
+   message.gender == 'female';
+   message.pitch = 0.2;
+   message.rate = 0.8;
+
+   speechSynthesis.speak(message);
+
+
    }
    
